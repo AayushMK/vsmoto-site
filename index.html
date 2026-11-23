@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VS Moto · Custom bike graphics by Vivek Shahi</title>
+  <meta name="description" content="VS Moto designs and fits custom graphics kits, number plates and livery for dirt bikes and motorcycles. By Vivek Shahi.">
+  <meta name="theme-color" content="#0d0a12">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="mark" href="#top" aria-label="VS Moto, back to top">VS<span>/</span>MOTO</a>
+  <nav>
+    <a href="#builder">Build a kit</a>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a class="nav-cta" href="#contact">Get yours</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="kicker">Custom bike graphics · Design, print, fit</p>
+    <h1 class="peel">
+      <span class="line">Your bike,</span>
+      <span class="line">loud<em>er.</em></span>
+    </h1>
+    <div class="hero-foot">
+      <p class="lede">
+        VS Moto is Vivek Shahi. He designs graphics kits, number plates and full livery for
+        dirt bikes and motorcycles, then prints them and puts them on.
+      </p>
+      <div class="ctas">
+        <a class="btn btn-hot" href="#builder">Design your kit</a>
+        <a class="btn btn-line" href="https://www.instagram.com/vs.moto_2046/" target="_blank" rel="noopener">See it on Instagram</a>
+      </div>
+    </div>
+    <div class="plate" aria-hidden="true"><span>46</span></div>
+  </section>
+
+  <!-- SPONSOR STRIP -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      <span>Graphics kits</span><span>Number plates</span><span>Custom livery</span><span>Rally builds</span><span>Shrouds &amp; side panels</span><span>Design → Print → Fit</span>
+      <span>Graphics kits</span><span>Number plates</span><span>Custom livery</span><span>Rally builds</span><span>Shrouds &amp; side panels</span><span>Design → Print → Fit</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" aria-labelledby="services-h">
+    <h2 id="services-h" class="section-h"><span class="num">01</span>What he does</h2>
+    <ol class="svc">
+      <li>
+        <h3>Full graphics kits</h3>
+        <p>Shrouds, side panels, fenders and plates, designed as one look for your exact model.</p>
+      </li>
+      <li>
+        <h3>Number plates</h3>
+        <p>Your number, your name, your colours. Race plates that read from across the track.</p>
+      </li>
+      <li>
+        <h3>Custom livery</h3>
+        <p>Got an idea, a team, a sponsor or a mood? It gets drawn up from scratch, just for you.</p>
+      </li>
+      <li>
+        <h3>Fitted, not just printed</h3>
+        <p>The graphics go on the bike clean: no bubbles, no lifting edges, lined up properly.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- BUILDER -->
+  <section id="builder" class="builder" aria-labelledby="builder-h">
+    <h2 id="builder-h" class="section-h"><span class="num">02</span>Build a kit</h2>
+    <p class="section-sub">Play with colours, pattern and number. When you like it, send it to Vivek and he will turn it into the real thing.</p>
+
+    <div class="builder-grid">
+      <figure class="kit-wrap">
+        <svg id="kit" viewBox="0 0 1200 640" role="img" aria-labelledby="kit-title">
+          <title id="kit-title">Flat layout of a dirt bike graphics kit</title>
+        </svg>
+        <figcaption>Kit laid flat: shrouds, front plate, fenders, side panels.</figcaption>
+      </figure>
+
+      <form class="controls" id="controls" onsubmit="return false">
+        <fieldset>
+          <legend>Base colour</legend>
+          <div class="swatches" data-field="base"></div>
+        </fieldset>
+        <fieldset>
+          <legend>Accent colour</legend>
+          <div class="swatches" data-field="accent"></div>
+        </fieldset>
+        <fieldset>
+          <legend>Pattern</legend>
+          <div class="chips" data-field="pattern"></div>
+        </fieldset>
+        <div class="row">
+          <label>Number
+            <input id="f-number" type="text" inputmode="numeric" maxlength="3" value="46" autocomplete="off">
+          </label>
+          <label>Name on the panels
+            <input id="f-name" type="text" maxlength="12" value="VS MOTO" autocomplete="off">
+          </label>
+        </div>
+        <div class="row actions">
+          <button type="button" class="btn btn-line" id="shuffle">Shuffle</button>
+          <a class="btn btn-hot" id="send" href="https://ig.me/m/vs.moto_2046" target="_blank" rel="noopener">Send this to Vivek</a>
+        </div>
+        <p class="hint" id="send-hint">Opens a message to @vs.moto_2046. Your design details are copied, so just paste them in.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="work" aria-labelledby="work-h">
+    <h2 id="work-h" class="section-h"><span class="num">03</span>Fresh off the bench</h2>
+    <p class="section-sub">Straight from <a href="https://www.instagram.com/vs.moto_2046/" target="_blank" rel="noopener">@vs.moto_2046</a>.</p>
+    <div class="feed" id="feed"></div>
+    <a class="btn btn-line more" href="https://www.instagram.com/vs.moto_2046/" target="_blank" rel="noopener">See every build on Instagram</a>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" aria-labelledby="process-h">
+    <h2 id="process-h" class="section-h"><span class="num">04</span>How it goes</h2>
+    <ol class="steps">
+      <li><b>Tell him</b><span>Your bike, your number, the colours you like. Photos help.</span></li>
+      <li><b>He draws it</b><span>You get a design to look at and change until it feels right.</span></li>
+      <li><b>It gets printed</b><span>Cut to fit your model's panels.</span></li>
+      <li><b>It goes on</b><span>Fitted onto the bike. Then you ride it.</span></li>
+    </ol>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about" aria-labelledby="about-h">
+    <h2 id="about-h" class="section-h"><span class="num">05</span>Who's behind it</h2>
+    <div class="about-grid">
+      <!-- Placeholder copy: rewrite in Vivek's own words. -->
+      <p class="big">
+        Vivek Shahi. A rider who draws, and the guy who will notice your panel is
+        two millimetres off.
+      </p>
+      <p>
+        Every kit is designed for the person riding it and the bike it goes on,
+        so no two come out the same.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">Want your bike done?</h2>
+    <p>The fastest way is a message on Instagram.</p>
+    <div class="ctas">
+      <a class="btn btn-hot" href="https://ig.me/m/vs.moto_2046" target="_blank" rel="noopener">Message @vs.moto_2046</a>
+      <a class="btn btn-line" href="https://www.instagram.com/vivek.shahi_/" target="_blank" rel="noopener">Vivek on Instagram</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <span>© <span id="year"></span> VS Moto · Vivek Shahi</span>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
